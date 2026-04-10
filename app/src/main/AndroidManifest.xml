@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrangCantkikApps">
         <activity
+            android:name=".pertemuan_3.ThirdResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".pertemuan2.SecondActivity"
             android:exported="false" />
         <activity

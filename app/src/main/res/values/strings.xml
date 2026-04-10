@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">orang cantkik Apps</string>
+    <string name="judul">Verifikasi Login</string>
+    <string name="anak_judul">Silahkan Periksa Nomor Anda</string>
+    <string name="judul_baru">Kode Berhasil Dikirim</string>
 </resources>
