@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrangCantkikApps">
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".pertemuan_7.SeventhActivity"
             android:exported="true">
             <intent-filter>
@@ -25,7 +28,6 @@
         <activity
             android:name=".SplashScreenActivity"
             android:exported="false" />
-
         <activity
             android:name=".pertemuan_5.FifthActivity"
             android:exported="false" />
