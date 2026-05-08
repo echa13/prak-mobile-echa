@@ -14,7 +14,8 @@ import com.example.orangcantkikapps.databinding.ActivityMainBinding
 import com.example.orangcantkikapps.databinding.ActivityThirdBinding
 import com.example.orangcantkikapps.pertemuan_3.ThirdResultActivity
 import com.example.orangcantkikapps.pertemuan_4.FourthActivity
-import com.example.orangcantkikapps.pertemuan_6.AuthActivity
+import com.example.orangcantkikapps.AuthActivity
+import com.example.orangcantkikapps.pertemuan_7.SeventhActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +38,11 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("nama", "Politeknik Caltex Riau")
             intent.putExtra("asal", "Rumbai")
             intent.putExtra("usia", 25)
+            startActivity(intent)
+        }
+        binding.btnToSeventh.setOnClickListener {
+
+            val intent = Intent(this, SeventhActivity::class.java)
             startActivity(intent)
         }
         binding.btnLogout.setOnClickListener {

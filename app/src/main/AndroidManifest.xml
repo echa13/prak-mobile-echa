@@ -14,8 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OrangCantkikApps">
         <activity
-            android:name=".pertemuan_6.SplashScreenActivity"
+            android:name=".pertemuan_7.SeventhActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
             android:exported="false" />
+
         <activity
             android:name=".pertemuan_5.FifthActivity"
             android:exported="false" />
@@ -35,14 +45,8 @@
             android:name=".pertemuan2.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".pertemuan_6.AuthActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".AuthActivity"
+            android:exported="false" />
         <activity
             android:name=".pertemuan_4.FourthActivity"
             android:exported="false" />

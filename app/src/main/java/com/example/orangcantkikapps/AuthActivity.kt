@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.pertemuan_6
+package com.example.orangcantkikapps
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.orangcantkikapps.MainActivity
-import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.ActivityAuthBinding
 
 class AuthActivity : AppCompatActivity() {
@@ -24,16 +22,9 @@ class AuthActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-
-            v.setPadding(
-                systemBars.left,
-                systemBars.top,
-                systemBars.right,
-                systemBars.bottom
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom
             )
-
             insets
         }
 

@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.pertemuan_6
+package com.example.orangcantkikapps
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.example.orangcantkikapps.MainActivity
-import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.ActivitySplashScreenBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
