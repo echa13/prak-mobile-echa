@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.pertemuan_5
+package com.example.orangcantkikapps.home.pertemuan_5
 
 import android.R
 import android.os.Bundle

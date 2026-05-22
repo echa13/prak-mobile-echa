@@ -1,18 +1,15 @@
-package com.example.orangcantkikapps.pertemuan_7
+package com.example.orangcantkikapps.home.pertemuan_7
 
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.orangcantkikapps.R
-import com.example.orangcantkikapps.databinding.ActivityMainBinding
 import com.example.orangcantkikapps.databinding.ActivitySeventhBinding
-import com.example.orangcantkikapps.databinding.ActivityWebViewBinding
 
 
 class SeventhActivity : AppCompatActivity() {

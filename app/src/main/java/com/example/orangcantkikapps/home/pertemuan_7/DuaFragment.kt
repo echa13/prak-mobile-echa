@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.pertemuan_7
+package com.example.orangcantkikapps.home.pertemuan_7
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.orangcantkikapps.databinding.ActivityAuthBinding
+import com.example.orangcantkikapps.home.BaseActivity
 
 class AuthActivity : AppCompatActivity() {
 
@@ -36,7 +37,7 @@ class AuthActivity : AppCompatActivity() {
 
         if (isLogin) {
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, BaseActivity::class.java)
             startActivity(intent)
 
             finish()

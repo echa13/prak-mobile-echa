@@ -2,20 +2,14 @@ package com.example.orangcantkikapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.appcompat.app.AlertDialog
-import com.example.orangcantkikapps.databinding.ActivityFourthBinding
 import com.example.orangcantkikapps.databinding.ActivityMainBinding
-import com.example.orangcantkikapps.databinding.ActivityThirdBinding
-import com.example.orangcantkikapps.pertemuan_3.ThirdResultActivity
-import com.example.orangcantkikapps.pertemuan_4.FourthActivity
-import com.example.orangcantkikapps.AuthActivity
-import com.example.orangcantkikapps.pertemuan_7.SeventhActivity
+import com.example.orangcantkikapps.home.pertemuan_4.FourthActivity
+import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 
 
 class MainActivity : AppCompatActivity() {

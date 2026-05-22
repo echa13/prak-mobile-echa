@@ -1,18 +1,13 @@
-package com.example.orangcantkikapps.pertemuan_4
+package com.example.orangcantkikapps.home.pertemuan_4
 
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.orangcantkikapps.MainActivity
 import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.ActivityFourthBinding
-import com.example.orangcantkikapps.databinding.ActivityThirdBinding
-import com.example.orangcantkikapps.pertemuan_3.ThirdResultActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 

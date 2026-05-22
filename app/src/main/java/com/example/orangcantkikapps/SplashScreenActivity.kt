@@ -51,7 +51,7 @@ class SplashScreenActivity : AppCompatActivity() {
             // Cek login
             val intent = if (isLogin) {
 
-                Intent(this@SplashScreenActivity, MainActivity::class.java)
+                Intent(this@SplashScreenActivity, BaseActivity::class.java)
 
             } else {
 

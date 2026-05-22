@@ -1,8 +1,6 @@
-package com.example.orangcantkikapps.pertemuan_5
+package com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -10,44 +8,27 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.orangcantkikapps.R
-import com.example.orangcantkikapps.databinding.ActivityFifthBinding
+import com.example.orangcantkikapps.databinding.ActivityNinthBinding
 
-class FifthActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityFifthBinding
-
+class NinthActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNinthBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ActivityFifthBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-        // Penanganan Window Insets (Padding Sistem)
-        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
+        binding = ActivityNinthBinding.inflate(layoutInflater)
+        setContentView(R.layout.activity_ninth)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-
-            // 1. Berikan padding BOTTOM ke container utama (agar navigasi bawah tidak tertutup)
-            v.setPadding(systemBars.left, 0, systemBars.right, systemBars.bottom)
-            binding.appBarLayout.setPadding(0, systemBars.top, 0, 0)
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        binding.btnWebView.setOnClickListener {
-            startActivity(Intent(this, WebViewActivity::class.java))
-        }
-
-        // Improvisasi: Judul pada CollapsingToolbar
         setSupportActionBar(binding.toolbar)
         supportActionBar?.apply {
-            title = "Activity Fifth"
-            subtitle = "Ini adalah subtitle"
-            setHomeAsUpIndicator(R.drawable.ic_add)
+            title = "Pertemuan 7"
+            setHomeAsUpIndicator(com.android.car.ui.R.drawable.car_ui_icon_arrow_back)
             setDisplayHomeAsUpEnabled(true)
             setDisplayShowHomeEnabled(true)
         }
-    }
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.main_menu, menu)
-        return true
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {

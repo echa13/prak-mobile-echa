@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pink"
-    tools:context=".pertemuan_7.TigaFragment">
+    tools:context=".home.pertemuan_7.TigaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

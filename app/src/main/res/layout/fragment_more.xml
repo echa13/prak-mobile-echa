@@ -3,16 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9F4D4"
-    tools:context=".home.pertemuan_7.SatuFragment">
+    tools:context=".More.MoreFragment"
+    android:background="#D5FFD8">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:fontFamily="@font/baksosapi"
-        android:text="Disini bersama Ayu dan Eca"
+        android:textSize="25dp"
+        android:textStyle="bold"
         android:textAlignment="center"
-        android:textSize="40dp" />
+        android:text="Ini Fragment More" />
 
 </FrameLayout>

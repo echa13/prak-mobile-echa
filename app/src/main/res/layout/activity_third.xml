@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg"
-    tools:context=".pertemuan_3.ThirdActivity">
+    tools:context=".home.pertemuan_3.ThirdActivity">
 
     <EditText
         android:id="@+id/inputNoTujuan"
