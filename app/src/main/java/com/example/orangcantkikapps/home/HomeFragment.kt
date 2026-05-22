@@ -14,8 +14,7 @@ import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.FragmentHomeBinding
 import com.example.orangcantkikapps.home.pertemuan_4.FourthActivity
-import com.example.orangcantkikapps.home.pertemuan_9.NinthActivity.NinthActivity
-
+import com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!

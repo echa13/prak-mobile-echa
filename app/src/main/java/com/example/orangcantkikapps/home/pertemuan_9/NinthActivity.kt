@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
+package com.example.orangcantkikapps.home.pertemuan_9
 
 import android.os.Bundle
 import android.view.MenuItem
