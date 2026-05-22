@@ -1,15 +1,14 @@
-package com.example.orangcantkikapps.home
+package com.example.orangcantkikapps
 
 import android.os.Bundle
-import androidx.activity.R
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import com.example.orangcantkikapps.home.HomeFragment
 import com.example.orangcantkikapps.Message.MessageFragment
 import com.example.orangcantkikapps.More.MoreFragment
+import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.ActivityBaseBinding
 import com.example.orangcantkikapps.home.HomeFragment.HomeFragment
 

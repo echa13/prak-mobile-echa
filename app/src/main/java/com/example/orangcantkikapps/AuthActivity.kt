@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.orangcantkikapps.databinding.ActivityAuthBinding
-import com.example.orangcantkikapps.home.BaseActivity
+import com.example.orangcantkikapps.BaseActivity
 
 class AuthActivity : AppCompatActivity() {
 
