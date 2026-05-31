@@ -6,7 +6,7 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.tabs.TabLayoutMediator
 import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.databinding.ActivityTenthBinding
-import com.yourpackage.home.pertemuan_10.TenthTabsAdapter
+import com.example.orangcantkikapps.home.pertemuan_10.TenthTabsAdapter
 
 class TenthActivity : AppCompatActivity() {
 
@@ -36,19 +36,19 @@ class TenthActivity : AppCompatActivity() {
                 0 -> {
                     tab.text = "Tab A"
                     tab.icon = ContextCompat.getDrawable(this, android.R.drawable.ic_dialog_info)
-
-                    // Tambah Badge Tanpa nomor (hanya titik indikator)
                     val badge = tab.getOrCreateBadge()
                     badge.isVisible = true
                 }
                 1 -> {
                     tab.text = "Tab B"
                     tab.icon = ContextCompat.getDrawable(this, android.R.drawable.ic_dialog_email)
-
-                    // Tambah Badge dengan nomor angka 5
                     val badge = tab.getOrCreateBadge()
                     badge.isVisible = true
                     badge.number = 5
+                }
+                2 -> {
+                    tab.text = "Produk" // Label tab ketiga
+                    tab.icon = ContextCompat.getDrawable(this, android.R.drawable.ic_menu_gallery) // Menambahkan icon galeri/produk
                 }
             }
         }.attach()
