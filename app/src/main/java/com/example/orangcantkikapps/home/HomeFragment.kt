@@ -3,19 +3,23 @@ package com.example.orangcantkikapps.home.HomeFragment
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.example.orangcantkikapps.AuthActivity
 import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 import com.example.orangcantkikapps.R
+import com.example.orangcantkikapps.data.api.CatFactApiClient
 import com.example.orangcantkikapps.databinding.FragmentHomeBinding
 import com.example.orangcantkikapps.home.pertemuan_4.FourthActivity
 import com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
 import com.example.orangcantkikapps.home.pertemuan_10.TenthActivity // Import untuk TenthActivity
+import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
@@ -63,6 +67,10 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
+        binding.btnRefresh.setOnClickListener {
+            loadCatFact()
+        }
+
         binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(requireContext())
                 .setTitle("Logout")
@@ -79,10 +87,23 @@ class HomeFragment : Fragment() {
                 .setNegativeButton("Tidak", null)
                 .show()
         }
+        loadCatFact()
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null // Mencegah memory leak pada fragment
+    }
+
+    private fun loadCatFact() {
+        lifecycleScope.launch {
+            try {
+                val response = CatFactApiClient.apiService.getCatFact()
+                Log.e("CatFact", "Received cat fact: ${response.fact}")
+                binding.tvCatFact.text = "\"${response.fact}\""
+            } catch (e: Exception) {
+                binding.tvCatFact.text = "Gagal mengambil fakta kucing."
+            }
+        }
     }
 }
