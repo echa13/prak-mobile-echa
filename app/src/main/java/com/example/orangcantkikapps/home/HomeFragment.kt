@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.home.HomeFragment
+package com.example.orangcantkikapps.Home.HomeFragment
 
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
