@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import com.example.orangcantkikapps.Home.HomeFragment.HomeFragment
+import com.example.orangcantkikapps.home.HomeFragment
 import com.example.orangcantkikapps.Message.MessageFragment
 import com.example.orangcantkikapps.More.MoreFragment
 import com.example.orangcantkikapps.Note.NoteFragment

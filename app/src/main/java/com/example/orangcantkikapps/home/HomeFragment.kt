@@ -1,4 +1,4 @@
-package com.example.orangcantkikapps.Home.HomeFragment
+package com.example.orangcantkikapps.home
 
 import android.content.Context.MODE_PRIVATE
 import android.content.Intent
@@ -15,15 +15,16 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.orangcantkikapps.AuthActivity
-import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 import com.example.orangcantkikapps.R
 import com.example.orangcantkikapps.data.api.CatFactApiClient
 import com.example.orangcantkikapps.data.api.PhotoApiClient
 import com.example.orangcantkikapps.databinding.FragmentHomeBinding
 import com.example.orangcantkikapps.home.Photo.PhotoAdapter
 import com.example.orangcantkikapps.home.pertemuan_4.FourthActivity
+import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 import com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
-import com.example.orangcantkikapps.home.pertemuan_10.TenthActivity // Import untuk TenthActivity
+import com.example.orangcantkikapps.home.pertemuan_10.TenthActivity
+import com.example.orangcantkikapps.home.pertemuan_13.ThirteenthActivity
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -66,9 +67,15 @@ class HomeFragment : Fragment() {
             startActivity(intent)
         }
 
-        // AKSI TOMBOL PERTEMUAN 10 (Pastikan ID button di fragment_home.xml adalah btnToTenth)
+        // AKSI TOMBOL PERTEMUAN 10 (Benar)
         binding.btnToTenth.setOnClickListener {
             val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+        }
+
+        // AKSI TOMBOL PERTEMUAN 13 (Ganti ID-nya jadi btnToThirteenth)
+        binding.btnToThirteenth.setOnClickListener {
+            val intent = Intent(requireContext(), ThirteenthActivity::class.java)
             startActivity(intent)
         }
 

@@ -138,6 +138,19 @@
                 app:layout_constraintTop_toBottomOf="@+id/btnToNinth" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToThirteenth"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pertemuan 13 (Camera)"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#E745AF"
+                app:cornerRadius="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnToTenth" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnLogout"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
@@ -148,7 +161,7 @@
                 app:cornerRadius="24dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnToTenth" />
+                app:layout_constraintTop_toBottomOf="@+id/btnToThirteenth" />
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardCatFact"
