@@ -16,6 +16,7 @@ import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.fragment.app.Fragment
 import com.example.orangcantkikapps.databinding.FragmentTabScanBinding
+import com.example.orangcantkikapps.utils.PermissionHelper
 import com.google.mlkit.vision.barcode.BarcodeScannerOptions
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.barcode.common.Barcode
@@ -60,20 +61,26 @@ class TabScanFragment : Fragment() {
         cameraExecutor = Executors.newSingleThreadExecutor()
 
         // Cek apakah izin kamera sudah diberikan atau belum
-        if (hasCameraPermission()) {
-            startCamera()
+        if (!PermissionHelper.hasPermission(
+                requireActivity(),
+                Manifest.permission.CAMERA)) {
+            PermissionHelper.requestPermission(
+                permissionLauncher,
+                Manifest.permission.CAMERA
+            )
         } else {
-            permissionLauncher.launch(Manifest.permission.CAMERA)
+            startCamera()
         }
     }
 
     // Fungsi untuk memeriksa status izin kamera
-    private fun hasCameraPermission(): Boolean {
-        return ContextCompat.checkSelfPermission(
-            requireContext(),
-            Manifest.permission.CAMERA
-        ) == PackageManager.PERMISSION_GRANTED
-    }
+//    private fun hasCameraPermission(): Boolean {
+//        return ContextCompat.checkSelfPermission(
+//            requireContext(),
+//            Manifest.permission.CAMERA
+//        ) == PackageManager.PERMISSION_GRANTED
+//    }
+
 
     // Fungsi utama untuk mengaktifkan kamera dan melakukan scanning QR Code
     private fun startCamera() {

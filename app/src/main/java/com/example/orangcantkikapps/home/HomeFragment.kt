@@ -25,6 +25,7 @@ import com.example.orangcantkikapps.home.pertemuan_7.SeventhActivity
 import com.example.orangcantkikapps.home.pertemuan_9.NinthActivity
 import com.example.orangcantkikapps.home.pertemuan_10.TenthActivity
 import com.example.orangcantkikapps.home.pertemuan_13.ThirteenthActivity
+import com.example.orangcantkikapps.home.pertemuan_3.ThirdActivity
 import kotlinx.coroutines.launch
 
 class HomeFragment : Fragment() {
@@ -54,6 +55,10 @@ class HomeFragment : Fragment() {
             intent.putExtra("nama", "Politeknik Caltex Riau")
             intent.putExtra("asal", "Rumbai")
             intent.putExtra("usia", 25)
+            startActivity(intent)
+        }
+        binding.btnToThird.setOnClickListener {
+            val intent = Intent(requireContext(), ThirdActivity::class.java)
             startActivity(intent)
         }
 
